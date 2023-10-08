@@ -33,6 +33,6 @@ jobs:
           restore-keys: ${{ runner.os }}-gradle
       - name: Build and analyze
         env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: ${{ sqp_c847efd4f4ee763d434ee8061941ea0cf89d655d }}
+          SONAR_HOST_URL: ${{ http://localhost:9000/ }}
         run: ./gradlew build sonar --info
